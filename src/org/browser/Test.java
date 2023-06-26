@@ -30,6 +30,10 @@ public class Test {
 	File f = new File("C:\\Users\\sabas\\OneDrive\\Desktop\\New folder (4)\\login.png");
 	// copyfile-static method
 	FileUtils.copyFile(screenshotAs, f);
+	driver.findElement(By.xpath("//button[@text='create')")).click();
+	Thread.sleep(3000);
+	driver.findElement(By.name("firstname")).sendKeys("Welcome");
+	driver.findElement(By.name("lastname")).sendKeys("GreensOMR");
 	String str = "Java Programm";
 	String output = "";
 	for (int i = str.length() - 1; i >= 0; i--) {
